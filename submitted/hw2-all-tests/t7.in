@@ -1,0 +1,13 @@
+void foo() {
+    enum foo { foo, foo, foo };
+    while (foo) {
+        foo = foo + foo * foo;
+        if (foo)
+            if (foo)
+                int foo;
+            else
+                byte foo;
+        foo(foo);
+    }
+    return foo;
+}

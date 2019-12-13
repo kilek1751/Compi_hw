@@ -1,0 +1,16 @@
+void main()
+{
+	bool w =  not a * (true + false);
+    bool x = (true + false) * not a;
+	int y= 1 + 2 * 5 + 7 / 2;
+	int z= 1 + 2 * (5 + 7) / 2;
+	while(true){
+		if(true or false)
+		if(true)
+		if(not false)
+			x = 3;
+		else
+			int x = 1;
+	}
+	
+}

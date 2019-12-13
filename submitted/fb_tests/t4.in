@@ -1,0 +1,3 @@
+byte fun(){
+  return 7b; 
+}

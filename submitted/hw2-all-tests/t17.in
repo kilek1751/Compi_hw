@@ -1,0 +1,5 @@
+void lexerror(int bool)
+@pre(bool == 0)
+{
+    print("lexerror");
+}

@@ -1,0 +1,23 @@
+int multienum(enum x x, enum y y, enum z z) {
+    return (int)x * (int)y * (int)z;
+}
+
+void nestedscopes() {
+    enum x { x1, x2 };
+    {
+        enum y { y1, y2 };
+        {
+            enum z { z1, z2 };
+            {
+                printi(multienum(x1, y2, z1));
+            }
+            printi(multienum(x1, y2, z1));
+        }
+        printi(multienum(x1, y2, z1));
+    }
+    printi(multienum(x1, y2, z1));
+    
+    int declaration(enum why here) {
+        return "Just Cause";
+    }
+}

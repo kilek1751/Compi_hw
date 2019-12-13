@@ -1,0 +1,7 @@
+void breaking() {
+    break;
+    break;
+    continue;
+    continue; break;
+    while ( x ) break; continue;
+}

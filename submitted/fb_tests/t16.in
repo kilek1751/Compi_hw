@@ -1,0 +1,199 @@
+enum months { JAN , FEB, MAR, APR, MAY, JUN,
+              JUL, AUG, SEP, OCT, NOV, DEC } ;
+
+int main( )
+{
+    printf("Enter the date:\n");
+    int day;
+	int month;
+	int year;
+	int res;
+    bool leap;
+    res=0;
+    leap=Leapyear(year);
+    if (res!=3)
+    {
+        printf("invalid date.\n");
+        return 0;
+    }
+    if (month>12 or month<1)
+    {
+        printf("Invalid date.\n");
+        return 0;
+    }
+    if (day>0 and day<32)
+    {
+        if (day==31)
+        {
+            if (month==2 or month ==4 or month==6 or month==9 or month==11)
+            {
+            printf("Invalid date.\n");
+            return 0;
+            }
+        }
+        if (day==30)
+        {
+            if (month==2)
+            {
+            printf("Invalid date.\n");
+            return 0;
+            }
+        }
+        if (day==29 and month==2)
+        {
+            if (not leap)
+            {
+            printf("Invalid date.\n");
+            return 0;
+            }
+
+        }
+
+    }
+    else
+    {
+        printf("Invalid date.\n");
+        return 0;
+    }
+    printf("Enter number of days:\n");
+    int n = 0;
+    while (n!=0)
+    {
+        if (n>0)
+        {
+            if (day<28)
+            {
+                day=day+1;
+                n=n-1;
+            }
+            if (day==28)
+            {
+                if (month==2 and leap==false)
+                {
+                    month=3;
+                    day=1;
+                    n=n-1;
+                }
+                else
+                {
+                    day=day+1;
+                    n=n-1;
+                }
+            }
+            if (day==29)
+            {
+                if (month==2 and leap==true)
+                {
+                    month=3;
+                    day=1;
+                    n=n-1;
+                }
+                else
+                {
+                    day=day+1;
+                    n=n-1;
+                }
+            }
+            if (day==30)
+            {
+                if (month==4 or month==6 or month==9 or month==11)
+                {
+                    month=month+1;
+                    day=1;
+                    n=n-1;
+                }
+                else
+                {
+                    day=day+1;
+                    n=n-1;
+                }
+
+            }
+            if (day==31)
+            {
+                    day=1;
+                    n=n-1;
+                    if (month!=12)
+                            month=month+1;
+                    if (month==12)
+                    {
+                        year=year+1;
+                        leap=Leapyear (year);
+                        month=1;
+
+                    }
+
+            }
+        }
+        if (n<0)
+        {
+            if (day!=1)
+            {
+                day=day-1;
+                n=n+1;
+            }
+            if (day==1)
+            {
+                if (month!=1)
+                {
+                      if (month==2 or month==4 or month==6 or month==8 or month==9 or month==11)
+                      {
+                          day=31;
+                          month=month-1;
+                          n=n+1;
+                      }
+                      if (month==5 or month==7 or month==10 or month==12)
+                      {
+                          day=30;
+                          month=month-1;
+                          n=n+1;
+                      }
+                      if (month==3)
+                      {
+                          if(leap==false)
+                            day=28;
+                          if (leap==true)
+                            day=29;
+                          month=2;
+                          n=n+1;
+                      }
+
+                }
+                if (month==1)
+                {
+                    day=31;
+                    month=12;
+                    year=year-1;
+                    leap=Leapyear(year);
+                    n=n+1;
+
+                }
+            }
+        }
+
+    }
+    printf("%d/%d/%d", day,month,year);
+}
+
+bool Leapyear (int year)
+{
+    bool meoberet;
+    meoberet=false;
+    if (year/4==0)
+    {
+    meoberet=true;
+        if (year/100==0)
+        {
+            meoberet=false;
+            if (year/400==0)
+                meoberet=true;
+        }
+    }
+    return meoberet;
+}
+
+
+
+
+
+

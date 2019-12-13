@@ -1,0 +1,21 @@
+#!/bin/bash 
+command="./hw2 < t\$i.in >& t\$i.res"
+
+i="1"
+numtests=21
+ 
+while [ $i -le $numtests ] 
+	do 
+	eval $command 
+	diff t$i.res t$i.out &> /dev/null 
+	if [[ $? != 0 ]] 
+		then
+		echo "Failed test #"$i"!" 
+		exit
+	fi
+	echo "Test "$i" passed!" 	
+	i=$[$i+1] 
+done 
+
+echo "Ok to submit :)" 
+exit

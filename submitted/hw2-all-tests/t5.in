@@ -1,0 +1,13 @@
+enum MyFirstEnum { A, B, C };
+enum MySecondEnum { A, B, C };
+
+int main() {
+    ThisFuncDoesNotExist("And it's okay");
+    if (exists)
+        if (not exists)
+            print       ("I'M IN SPAAAAACE"); // Portal 2 ending, anyone?
+            // Oops()
+        else
+            DoSomething(this, is, an, expression, list);
+    return 42b;
+}

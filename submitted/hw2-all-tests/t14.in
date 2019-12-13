@@ -1,0 +1,11 @@
+enum e {A, B, C};
+
+void foo(int x, int y, byte z) {
+    return x + y + z;
+}
+
+int main() {
+    printi(foo()); // no arguments, it's okay
+    
+    if ( exp ) x=1; else if ( exp ) if ( exp ) x(); else return;
+}

@@ -1,0 +1,12 @@
+void main(){
+  //Associativity
+  bool x = a + not "true" * true or true and false >= 7 == (1+1)*7 < "1" ;
+  bool y = a - not "true" / true or true and false <= 7 != (1-1)/7 > "1"  ;
+  
+  //Dangling else
+  if( x > "a" or x <= 1)
+    if (true)
+      y = 1 ;
+    else
+      y = "1" ;
+}

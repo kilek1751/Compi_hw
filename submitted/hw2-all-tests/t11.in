@@ -1,0 +1,28 @@
+enum WeekDays
+{
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    NumDays
+};
+
+int NextDay(enum WeekDays day) {
+    int next;
+    if (day == Saturday) {
+        next = (int)Sunday;
+    }
+    else {
+        next = (int)day + 1;
+    }
+    return day;
+}
+
+void main() {
+    enum WeekDays today = Today();
+    print("Tomorrow is ");
+    printi(NextDay(today));
+}

@@ -1,0 +1,6 @@
+enum call {
+    A,
+    B,
+    C,
+    D(); // lol what?
+}

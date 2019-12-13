@@ -1,0 +1,14 @@
+void main(){
+  bool x = a + not "true" * true or true and false ;
+  int z     ;
+  if( x > "a" or x <= 1)
+      x = 0;
+  else
+    if (true)
+      y = 1 ;
+    else
+      y = "1" ;
+  //Hi you
+  if (z >= "a" >= 2)
+    z = 1;
+}

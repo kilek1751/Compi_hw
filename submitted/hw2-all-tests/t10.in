@@ -1,0 +1,2 @@
+// code outside functions? what now?
+int global = "We don't have globals...";

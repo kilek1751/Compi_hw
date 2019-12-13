@@ -1,0 +1,6 @@
+int main() {
+    print("Enums cannot come after functions!");
+    return 42;
+}
+
+enum ThisIsNotRight { WRONG1, WRONG2 };

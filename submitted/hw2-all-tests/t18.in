@@ -1,0 +1,6 @@
+void associativity() {
+    x = y == z != w < r + t - q * p() / (int)(byte)n+m;
+    return associativity(y == z != w < r + t - q * p() / (int)(byte)n+m, associativity(), associativity);
+    // return associativity(y == z != w < r + t - q * p() / (int)(byte)n+m, associativity(), associativity);
+    oops("I forgot the semicolon!" * 1)
+}

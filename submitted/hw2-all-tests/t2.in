@@ -1,0 +1,25 @@
+enum MyEnum {A, B, C, D};
+
+enum MyOtherEnum {X, Y, Z, W};
+
+bool uselessFunc(int x, int y)
+{
+    return x < y;
+}
+
+int return6()
+{
+    return 6;
+}
+
+void main() {
+	enum MyEnum e = B;
+    bool c = true;
+    if (not c) {
+        int x = return6();
+        printi(x);
+		x = (int)e;
+    }
+    else
+        syntax error;
+}

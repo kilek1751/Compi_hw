@@ -1,0 +1,11 @@
+void main()
+{
+    int x = 4 ;
+    if (x == 4)
+      if (x == 5)
+        x = 3;
+      else
+        x = 4;
+    else
+     x = 4
+}

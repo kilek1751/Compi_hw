@@ -1,0 +1,9 @@
+void WeirdLegalThings(int fornow) {
+    int x;
+    byte y;
+    enum z z;
+    z = "what" * z;
+    y = x + y * z / x - y;
+    y = "STRING?";
+    WeirdLegalThings(not WeirdLegalThings);
+}

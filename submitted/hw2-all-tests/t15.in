@@ -1,0 +1,8 @@
+void doublelse() {
+    if (x)
+        foo();
+    else
+        bar();
+    else
+        waitwhat("?");
+}
