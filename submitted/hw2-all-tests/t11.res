@@ -37,9 +37,9 @@
 21: Statement -> LBRACE Statements RBRACE
 40: Type -> INT
 46: Exp -> ID
+57: Exp -> LPAREN Type RPAREN Exp
 48: Exp -> NUM
 45: Exp -> Exp BINOP Exp
-57: Exp -> LPAREN Type RPAREN Exp
 27: Statement -> ID ASSIGN Exp SC
 19: Statements -> Statement
 21: Statement -> LBRACE Statements RBRACE

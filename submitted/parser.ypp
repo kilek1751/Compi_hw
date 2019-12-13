@@ -85,7 +85,7 @@ Exp : Exp AND Exp											{output::printProductionRule(54);};
 Exp : Exp OR Exp 												{output::printProductionRule(55);};
 Exp : Exp RELOP Exp											{output::printProductionRule(56);};
 Exp : Exp RELEQ Exp											{output::printProductionRule(56);};
-Exp : LPAREN Type RPAREN Exp									{output::printProductionRule(57);};
+Exp : LPAREN Type RPAREN Exp %prec CAST								{output::printProductionRule(57);};
 
 %%
 
